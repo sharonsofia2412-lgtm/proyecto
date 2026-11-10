@@ -1,31 +1,241 @@
-{
+@import url('https://fonts.googleapis.com/css2?family=Redaction:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+body{
+
     margin: 0;
+
     padding: 0;
-    box_sizzing: border-box;
+
+    box-sizing: border-box;
+
+    font-family: "Redaction", serif;
 
 }
+
+
 
 html{
+
 scroll-behavior: smooth;
 
+
+
 }
 
-section{
-background: linear-gradient(rgba(0, 0, 0, 0.7)), rgb(255, 255, 255) url("../asent/saturno.jpg");
+
+
+#Inicio{
+
+background: linear-gradient(rgba(215, 178, 215, 0.7), rgb(255, 255, 255)), url("../assets/hermoso-campo-de-lirios-rosados-floreciendo-bajo-la-suave-luz-del-sol-con-suaves-nubes-una-vista-impresionante-captura-un-animados-410546586.webp");
+
     background-size: cover;
+
     background-position: center center;
+
     height: 100vh;
+
 }
 
-section header{
+
+
+#Inicio .Contenido header{
+
     color: aliceblue;
-    background-color: rgba(0, 0, 0, .7);
+
+    background-color: rgba(210, 140, 199, 0.7);
+
     position: fixed;
+
     width: 100%;
+
     z-index: 100;
+
     top: 0;
+
 }
 
-section header div{
-    max-width: 110oopx;
+
+
+#Inicio .Contenido header .Contenido-header{
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 20px;
+
+}
+
+
+
+#Inicio .Contenido header .Contenido-header nav h1{
+
+    text-align: center;
+
+    color: rgb(222, 121, 217);
+
+}
+
+
+
+#Inicio .Contenido header .Contenido-header nav ul{
+
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+#Inicio .Contenido header .Contenido-header nav ul li a{
+
+text-decoration: none;
+
+color: rgb(251, 252, 252);
+
+margin: 0 12px;
+
+font-weight: 400;
+
+transition: .5s;
+
+}
+
+
+
+#Inicio .Contenido header .Contenido-header nav ul li a:hover{
+
+    color: rgb(235, 138, 214);
+
+}
+
+
+
+#Inicio .Contenido .presentacion{
+
+
+
+    max-width: 1100px;
+
+    height: 100vh;
+
+    margin: auto;
+
+    columns: rgb(250, 247, 247);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+#Inicio .Contenido .presentacion .bienvenida{
+
+
+
+font-size: 16px;
+
+margin-bottom: 20px;
+
+text-transform: uppercase;
+
+letter-spacing: 5px;
+
+}
+
+/* SECCION SOBRE MI */
+#sobreMi{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: rgb(10, 10, 10);
+    display: flex;
+}
+
+#sobreMi .Contenido-foto{
+    max-width: 400px;
+    margin-right: 80px;
+
+}
+
+#sobreMi .Contenido-foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(226, 43, 223);
+}
+
+#sobreMi .sobreMi{
+margin: 0 40px;
+}
+
+#sobreMi .sobreMi .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: rgb(197, 86, 167);
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-color: 5px;
+
+}
+
+#sobreMi .sobreMi h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+
+}
+
+#sobreMi .sobreMi h2 span{
+    color: rgb(207, 92, 184);
+
+}
+
+#sobreMi .sobreMi h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobreMi .sobreMi p{
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(7, 7, 7);
+    margin-bottom: 12px;
+}
+
+#sobreMi .sobreMi a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(197, 125, 197);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid rgb(82, 39, 82);
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#sobreMi .sobreMi a:hover{
+    background-color: rgb(253, 152, 244);
+    color: rgb(70, 11, 61);
 }
